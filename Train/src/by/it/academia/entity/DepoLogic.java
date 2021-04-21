@@ -3,17 +3,6 @@ package by.it.academia.entity;
 import java.util.ArrayList;
 
 public class DepoLogic {
-    public static ArrayList<Train> handmadeSort(Depo depo) {
-        ArrayList<Train> sortedTrains = new ArrayList<>();
-        ArrayList<Train> trains = depo.getTrains();
-        for (Train train : trains) {
-            System.out.println(train.getTrainNumber() + "  " + train.getDispatchDataTime().getTime());
-        }
-        for (int i = 0; i < trains.size(); i++) {
-        }
-        return sortedTrains;
-    }
-
     public static ArrayList<Train> swap(ArrayList<Train> trains, int oneIndex, int twoIndex) {
         Train temp = trains.get(oneIndex);
         trains.set(oneIndex, trains.get(twoIndex));
